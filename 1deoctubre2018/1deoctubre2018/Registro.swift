@@ -16,6 +16,16 @@ class Registro: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+    }
+    func crealerta ()
+    {
+        
+        var  alert = UIAlertController(title: "Tu usuario ha sido registrado", message: "", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: { (action:UIAlertAction) in
+            print ("buuu")
+        }))
+        self.present(alert, animated: true)
         
     }
 
@@ -23,7 +33,9 @@ class Registro: UIViewController {
     @IBAction func regis(_ sender: UIButton) {
         nombre = [caja1.text!]
         contraseña = [caja2.text!]
+        crealerta()
         print(nombre, contraseña)
+        
     }
     
     
