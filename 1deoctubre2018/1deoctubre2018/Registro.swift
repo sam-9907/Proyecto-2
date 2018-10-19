@@ -29,8 +29,7 @@ class Registro: UIViewController {
         var alert = UIAlertController(title: "Mensaje:", message: mensaje, preferredStyle: UIAlertControllerStyle.alert)
         let okalert = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action:UIAlertAction) in
             self.dismiss(animated: true, completion: nil)
-           // { (action:UIAlertAction) in
-               // self.dismiss(animated: true, completion:
+           
         })
         self.present(alert, animated: true)
         alert.addAction(okalert)
@@ -56,20 +55,7 @@ class Registro: UIViewController {
             let nuevoregistro = datos(nombre: caja1.text!, contraseña: caja2.text!)
             registracion.append(nuevoregistro)
         }
-        /*if let dato = caja1.text{
-            nombre.append(dato)
-            defaults.set(nombre,forKey: "nombre")
-            print(nombre)
-        }
-        if let dato1 = caja2.text {
-            contraseña.append(dato1)
-            defaults.set(contraseña,forKey: "contraseña")
-            print(contraseña)
-        }*/
-       // nombre = [caja1.text!]
-        //contraseña = [caja2.text!]
         
-        //print(nombre, contraseña)
         
     }
 }

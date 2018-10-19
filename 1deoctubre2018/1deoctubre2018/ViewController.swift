@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    //var lista : [String] = []
+    
     @IBOutlet weak var caja: UITextField!
     @IBOutlet weak var ingrecontra: UITextField!
     
