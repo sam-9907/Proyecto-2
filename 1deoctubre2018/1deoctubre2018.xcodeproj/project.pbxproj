@@ -15,7 +15,7 @@
 		FA5A29A9216BF21400FF81D4 /* Registro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A29A8216BF21400FF81D4 /* Registro.swift */; };
 		FA5A29AB216BFA3500FF81D4 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A29AA216BFA3500FF81D4 /* Datos.swift */; };
 		FA734F83217A326800FD0FB9 /* Ingreso.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734F82217A326800FD0FB9 /* Ingreso.swift */; };
-		FA734F85217A5F7200FD0FB9 /* Iniciosesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA734F84217A5F7200FD0FB9 /* Iniciosesion.swift */; };
+		FADD29C7217A5BE500B540F8 /* SesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADD29C6217A5BE500B540F8 /* SesionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		FA5A29A8216BF21400FF81D4 /* Registro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registro.swift; sourceTree = "<group>"; };
 		FA5A29AA216BFA3500FF81D4 /* Datos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 		FA734F82217A326800FD0FB9 /* Ingreso.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingreso.swift; sourceTree = "<group>"; };
-		FA734F84217A5F7200FD0FB9 /* Iniciosesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iniciosesion.swift; sourceTree = "<group>"; };
+		FADD29C6217A5BE500B540F8 /* SesionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,12 @@
 				FA0598732162C0E800378ED8 /* ViewController.swift */,
 				FA5A29A8216BF21400FF81D4 /* Registro.swift */,
 				FA0598752162C0E800378ED8 /* Main.storyboard */,
-				FA734F84217A5F7200FD0FB9 /* Iniciosesion.swift */,
 				FA5A29AA216BFA3500FF81D4 /* Datos.swift */,
 				FA734F82217A326800FD0FB9 /* Ingreso.swift */,
 				FA0598782162C0E900378ED8 /* Assets.xcassets */,
 				FA05987A2162C0E900378ED8 /* LaunchScreen.storyboard */,
 				FA05987D2162C0E900378ED8 /* Info.plist */,
+				FADD29C6217A5BE500B540F8 /* SesionViewController.swift */,
 			);
 			path = 1deoctubre2018;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 				FA5A29AB216BFA3500FF81D4 /* Datos.swift in Sources */,
 				FA0598722162C0E800378ED8 /* AppDelegate.swift in Sources */,
 				FA5A29A9216BF21400FF81D4 /* Registro.swift in Sources */,
-				FA734F85217A5F7200FD0FB9 /* Iniciosesion.swift in Sources */,
+				FADD29C7217A5BE500B540F8 /* SesionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +298,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = 1deoctubre2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,6 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = 1deoctubre2018/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

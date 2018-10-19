@@ -11,5 +11,7 @@ import UIKit
 struct login{
     var nombreregistardo: String
     var contraseñaresgitrada: String
+    var sesion: Bool = false
+
 }
 var ingresa: [login] = []

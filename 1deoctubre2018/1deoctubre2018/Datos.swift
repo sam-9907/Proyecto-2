@@ -12,5 +12,6 @@ import UIKit
 struct datos{
     var nombre: String
     var contraseña: String
+
 }
 var registracion: [datos] = []
