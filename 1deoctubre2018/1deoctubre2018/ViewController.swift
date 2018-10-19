@@ -34,13 +34,13 @@ class ViewController: UIViewController {
         var size1 = registracion.count
         print(size1)
         var i = 0
-        if (ingresa.count != 0) && (registracion.count == 0){
+       /* if (ingresa.count != 0) && (registracion.count == 0){
             
             let myAlert2 = UIAlertController(title: "Mensaje", message: "Debes registrarte.Es GRATIS", preferredStyle: .alert)
             myAlert2.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(myAlert2, animated: true, completion: nil)
             
-        }else{
+        }else{*/
     
         while i < size1 {
             if(ingresa[i].nombreregistardo == registracion[i].nombre) && (ingresa[i].contraseñaresgitrada == registracion[i].contraseña){
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
           size1 -= 1
         }
      
-        }}
+        }
     
     override func viewDidLoad() {
         super.viewDidLoad()
