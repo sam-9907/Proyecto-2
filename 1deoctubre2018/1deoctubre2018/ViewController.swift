@@ -9,28 +9,28 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var lista : [String] = []
+    //var lista : [String] = []
     @IBOutlet weak var caja: UITextField!
+    
+    @IBAction func ingreso(_ sender: UIButton) {
+        print("hola")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      let defaults = UserDefaults.standard
+      /*let defaults = UserDefaults.standard
         print("inicio")
         lista = defaults.object(forKey: "lista") as? [String] ?? [String]()
         print(lista.count)
         for cadena in lista{
             print(cadena)
-        }
+        }*/
+        
     }
-
-    @IBAction func guardar(_ sender: UIButton) {
-        let defaults = UserDefaults.standard
-        if let dato = caja.text{
-            lista.append(dato)
-            defaults.set(lista,forKey: "lista")
-        }
-    }
-
+    
+    
+    
+      
 
 }
 

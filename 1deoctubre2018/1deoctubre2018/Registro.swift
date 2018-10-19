@@ -11,33 +11,69 @@ import UIKit
 class Registro: UIViewController {
     @IBOutlet weak var caja1: UITextField!
     @IBOutlet weak var caja2: UITextField!
-    var nombre: [String] = []
-    var contraseña: [String] = []
+    @IBOutlet weak var caja3: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        let defaults = UserDefaults.standard
+        if let nombreusuario = defaults.object(forKey: "nombreusuario")as? String{
+            caja1.text = nombreusuario
+        }else{
+            caja1.text = ""
+        }
+       
     }
-    func crealerta ()
+    func crealerta (mensaje:String)
     {
-        
-        var  alert = UIAlertController(title: "Tu usuario ha sido registrado", message: "", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: { (action:UIAlertAction) in
-            print ("buuu")
-        }))
+       
+        var alert = UIAlertController(title: "Mensaje:", message: mensaje, preferredStyle: UIAlertControllerStyle.alert)
+        let okalert = UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: { (action:UIAlertAction) in
+            self.dismiss(animated: true, completion: nil)
+           // { (action:UIAlertAction) in
+               // self.dismiss(animated: true, completion:
+        })
         self.present(alert, animated: true)
-        
+        alert.addAction(okalert)
     }
 
+    
 
-    @IBAction func regis(_ sender: UIButton) {
-        nombre = [caja1.text!]
-        contraseña = [caja2.text!]
-        crealerta()
-        print(nombre, contraseña)
+        
+    @IBAction func regis(_ sender: Any) {
+        let username = caja1.text!;
+        let password = caja2.text!;
+        let confirm = caja3.text!;
+        let defaults = UserDefaults.standard
+        
+        if(password == confirm)
+        {
+            crealerta(mensaje: "Tu usuario ha sido registrado")
+        }
+        if(password != confirm)
+        {
+        crealerta(mensaje:"Las contraseñas son diferentes");
+        }else{
+            let nuevoregistro = datos(nombre: caja1.text!, contraseña: caja2.text!)
+            registracion.append(nuevoregistro)
+        }
+        /*if let dato = caja1.text{
+            nombre.append(dato)
+            defaults.set(nombre,forKey: "nombre")
+            print(nombre)
+        }
+        if let dato1 = caja2.text {
+            contraseña.append(dato1)
+            defaults.set(contraseña,forKey: "contraseña")
+            print(contraseña)
+        }*/
+       // nombre = [caja1.text!]
+        //contraseña = [caja2.text!]
+        
+        //print(nombre, contraseña)
         
     }
-    
-    
-
 }
+    
+    
+
+

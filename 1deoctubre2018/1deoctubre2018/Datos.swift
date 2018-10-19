@@ -7,7 +7,9 @@
 //
 
 import Foundation
+import UIKit
 struct datos{
-    var nombre: [String] = []
-    var contraseña: [String] = []
+    var nombre: String
+    var contraseña: String
 }
+var registracion: [datos] = []
