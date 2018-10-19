@@ -12,4 +12,4 @@ struct login{
     var nombreregistardo: String
     var contraseñaresgitrada: String
 }
-var ingresa: [datos] = []
+var ingresa: [login] = []
